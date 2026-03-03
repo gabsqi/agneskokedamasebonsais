@@ -94,7 +94,7 @@ a {
    BOTÕES
 ======================================== */
 .btn {
-  display: inline-block;
+  display: inline-flex;
   padding: 12px 28px;
   border-radius: 30px;
   font-size: 0.95rem;
@@ -114,16 +114,14 @@ a {
 }
 
 .btn--secundario {
-  background-color: transparent;
-  color: #4a7c59;
+  background-color: var(--cor-verde-claro);
+  color: var(--cor-verde);
   border: 2px solid #4a7c59;
 }
 
 .btn--whatsapp {
   background-color: #25d366;
   color: #fff;
-  font-size: 0.85rem;
-  padding: 8px 18px;
 }
 
 /* ========================================
@@ -427,4 +425,121 @@ a {
   text-align: center;
   padding: 24px 0;
   font-size: 0.85rem;
+}
+
+
+
+/* ========================================
+   TABLET — telas até 900px
+======================================== */
+@media (max-width: 900px) {
+
+  /* Catálogo: 3 colunas → 2 colunas */
+  .produtos__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Diferenciais: 3 → 2 colunas */
+  .diferenciais__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Sobre: lado a lado → empilhado */
+  .sobre__inner {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  /* Contato: 3 → 2 colunas */
+  .contato__cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Hero: título menor */
+  .hero__titulo {
+    font-size: 2.4rem;
+  }
+}
+
+
+/* ========================================
+   MOBILE — telas até 600px
+======================================== */
+@media (max-width: 600px) {
+
+  /* HEADER: esconde nav, mostra só logo */
+  .nav {
+    display: none;
+    /* dica futura: com JS você faz um menu hamburguer aqui */
+  }
+
+  .header {
+    padding: 12px 0;
+  }
+
+  /* HERO: ajustes de tamanho e espaçamento */
+  .hero {
+    padding: 64px 0;
+  }
+
+  .hero__titulo {
+    font-size: 1.9rem;
+  }
+
+  .hero__subtitulo {
+    font-size: 0.8rem;
+  }
+
+  .hero__descricao {
+    font-size: 1rem;
+  }
+
+  /* DIFERENCIAIS: 1 coluna */
+  .diferenciais__grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  /* CATÁLOGO: 1 coluna */
+  .produtos__grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Título da seção menor */
+  .secao__titulo {
+    font-size: 1.6rem;
+  }
+
+  /* SOBRE: imagem aparece depois do texto (já está empilhado,
+     só ajusta ordem visual se quiser a foto primeiro) */
+  .sobre__imagem {
+    order: -1; /* coloca a foto ACIMA do texto no mobile */
+  }
+
+  .sobre__inner {
+    gap: 24px;
+  }
+
+  /* CONTATO: 1 coluna */
+  .contato__cards {
+    grid-template-columns: 1fr;
+  }
+
+  /* Botão do produto: não deixa quebrar linha */
+  .produto__rodape {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .btn--whatsapp {
+    width: 100%; /* botão ocupa largura total no mobile */
+    justify-content: center;
+  }
+
+  /* FOOTER */
+  .footer {
+    font-size: 0.78rem;
+    padding: 20px 0;
+  }
 }
