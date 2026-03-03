@@ -1,0 +1,430 @@
+/* ========================================
+   PALETA DE CORES - AGNES KOKEDAMAS
+======================================== */
+:root {
+  --cor-rosa: #C97B84;
+  /* nome no logo */
+  --cor-verde: #5A7A52;
+  /* slogan / botões principais */
+  --cor-verde-escuro: #2d4a2d;
+  /* títulos, header escuro */
+  --cor-verde-claro: #e8f5e1;
+  /* fundos suaves, badges */
+  --cor-madeira: #8B6347;
+  /* fundo terroso, destaques */
+  --cor-madeira-claro: #f5ede4;
+  /* fundo bege claro */
+  --cor-texto: #2d2d2d;
+  --cor-texto-suave: #666;
+}
+
+
+
+
+
+
+/* ========================================
+   RESET E BASE
+======================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+
+html {
+  scroll-behavior: smooth;
+  /* faz o scroll suave ao clicar nos links do menu */
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: #2d2d2d;
+  background-color: #fafaf7;
+  line-height: 1.7;
+}
+
+/* Container centralizado com largura máxima */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ========================================
+   TIPOGRAFIA COMPARTILHADA
+======================================== */
+.secao__titulo {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  color: #2d4a2d;
+  margin-bottom: 12px;
+}
+
+.secao__subtitulo {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 48px;
+}
+
+.secao__titulo--claro {
+  color: #fff;
+}
+
+.secao__subtitulo--claro {
+  color: #c8ddb0;
+}
+
+/* ========================================
+   BOTÕES
+======================================== */
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.btn:hover {
+  opacity: 0.88;
+  transform: translateY(-2px);
+}
+
+.btn--primario {
+  background-color: #4a7c59;
+  color: #fff;
+}
+
+.btn--secundario {
+  background-color: transparent;
+  color: #4a7c59;
+  border: 2px solid #4a7c59;
+}
+
+.btn--whatsapp {
+  background-color: #25d366;
+  color: #fff;
+  font-size: 0.85rem;
+  padding: 8px 18px;
+}
+
+/* ========================================
+   HEADER
+======================================== */
+.header {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  border-bottom: 1px solid #e8f0e8;
+  z-index: 100;
+  padding: 16px 0;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo__icon {
+  font-size: 1.6rem;
+}
+
+.logo__text {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.25rem;
+  color: var(--cor-rosa); /* nome Agnes em rosa */
+  font-weight: 700;
+}
+
+.nav {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+}
+
+.nav__link {
+  color: #444;
+  font-size: 0.95rem;
+  font-weight: 400;
+  transition: color 0.2s;
+}
+
+.nav__link:hover {
+  color: #4a7c59;
+}
+
+.nav__link--destaque {
+  background-color: #4a7c59;
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 30px;
+  font-weight: 700;
+}
+
+.nav__link--destaque:hover {
+  color: #fff;
+  opacity: 0.88;
+}
+
+/* ========================================
+   HERO
+======================================== */
+.hero {
+  background: linear-gradient(135deg, var(--cor-verde-claro) 0%, var(--cor-madeira-claro) 100%);
+  padding: 100px 0;
+  text-align: center;
+  
+}
+
+.hero__subtitulo {
+  font-size: 0.95rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--cor-madeira); /* slogan em tom amadeirado */
+
+  margin-bottom: 16px;
+}
+
+.hero__titulo {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  color: #1e3a1e;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero__descricao {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 520px;
+  margin: 0 auto 36px;
+}
+
+/* ========================================
+   DIFERENCIAIS
+======================================== */
+.diferenciais {
+  padding: 64px 0;
+  background-color: #fff;
+}
+
+.diferenciais__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  text-align: center;
+}
+
+.diferencial__item {
+  padding: 32px 24px;
+  border-radius: 12px;
+  border: 1px solid #e8f0e8;
+}
+
+.diferencial__icone {
+  font-size: 2.4rem;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.diferencial__item h3 {
+  font-family: 'Playfair Display', serif;
+  color: #2d4a2d;
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+}
+
+.diferencial__item p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* ========================================
+   CATÁLOGO
+======================================== */
+.catalogo {
+  padding: 80px 0;
+  background-color: #fafaf7;
+}
+
+.produtos__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.produto__card {
+  background-color: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid #e8f0e8;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.produto__card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(74, 124, 89, 0.12);
+}
+
+.produto__foto {
+  height: 220px;
+  object-fit: cover;
+  /* corta a imagem sem distorcer */
+}
+
+.produto__info {
+  padding: 20px;
+}
+
+.produto__categoria {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #6a9e74;
+  background-color: #e8f5e1;
+  padding: 3px 10px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.produto__nome {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  color: #1e3a1e;
+  margin-bottom: 8px;
+}
+
+.produto__descricao {
+  font-size: 0.88rem;
+  color: #666;
+  margin-bottom: 16px;
+}
+
+.produto__rodape {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.produto__preco {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #2d4a2d;
+}
+
+/* ========================================
+   SOBRE
+======================================== */
+.sobre {
+  padding: 80px 0;
+  background-color: #fff;
+}
+
+.sobre__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.sobre__texto p {
+  color: #555;
+  margin-bottom: 16px;
+}
+
+.sobre__texto .btn {
+  margin-top: 8px;
+}
+
+.sobre__imagem img {
+  border-radius: 14px;
+}
+
+/* ========================================
+   CONTATO
+======================================== */
+.contato {
+  padding: 80px 0;
+  background-color: #2d4a2d;
+  text-align: center;
+}
+
+.contato__inner {
+  /* nada especial, usa container padrão */
+}
+
+.contato__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 8px;
+}
+
+.contato__card {
+  background-color: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 14px;
+  padding: 36px 24px;
+  color: #fff;
+}
+
+.contato__icone {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.contato__card h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.contato__card p {
+  font-size: 0.9rem;
+  color: #c8ddb0;
+  margin-bottom: 6px;
+}
+
+.contato__card .btn {
+  margin-top: 12px;
+}
+
+/* ========================================
+   FOOTER
+======================================== */
+.footer {
+  background-color: #1a2e1a;
+  color: #6a9e74;
+  text-align: center;
+  padding: 24px 0;
+  font-size: 0.85rem;
+}
