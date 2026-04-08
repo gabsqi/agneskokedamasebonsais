@@ -19,20 +19,11 @@
 }
 
 
-
-
-
-
-/* ========================================
-   RESET E BASE
-======================================== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-
 
 
 
@@ -66,9 +57,8 @@ a {
   text-decoration: none;
 }
 
-/* ========================================
-   TIPOGRAFIA COMPARTILHADA
-======================================== */
+
+
 .secao__titulo {
   font-family: 'Playfair Display', serif;
   font-size: 2rem;
@@ -91,7 +81,7 @@ a {
 }
 
 /* ========================================
-   BOTÕES
+           BOTÕES
 ======================================== */
 .btn {
   display: inline-flex;
@@ -122,6 +112,8 @@ a {
 .btn--whatsapp {
   background-color: #25d366;
   color: #fff;
+  align-items: center;
+  gap: 5px;
 }
 
 /* ========================================
@@ -155,7 +147,7 @@ a {
 .logo__text {
   font-family: 'Playfair Display', serif;
   font-size: 1.25rem;
-  color: var(--cor-rosa); /* nome Agnes em rosa */
+  color: var(--cor-rosa);
   font-weight: 700;
 }
 
@@ -193,32 +185,47 @@ a {
    HERO
 ======================================== */
 .hero {
-  background: linear-gradient(135deg, var(--cor-verde-claro) 0%, var(--cor-madeira-claro) 100%);
   padding: 100px 0;
   text-align: center;
-  
+  background-image: url("https://i.postimg.cc/k4J65n5c/imagem-2026-03-03-105043907.png");
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(26, 45, 26, 0.801);
+
+}
+
+.hero__inner {
+  position: relative;
+  z-index: 1;
 }
 
 .hero__subtitulo {
   font-size: 0.95rem;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: var(--cor-madeira); /* slogan em tom amadeirado */
-
+  color: var(--cor-verde-claro);
   margin-bottom: 16px;
 }
 
 .hero__titulo {
   font-family: 'Playfair Display', serif;
   font-size: 3rem;
-  color: #1e3a1e;
+  color: #ffffff;
   line-height: 1.2;
   margin-bottom: 20px;
 }
 
 .hero__descricao {
   font-size: 1.1rem;
-  color: #555;
+  color: #d4ead4;
   max-width: 520px;
   margin: 0 auto 36px;
 }
@@ -360,6 +367,8 @@ a {
 
 .sobre__texto .btn {
   margin-top: 8px;
+  align-items: center;
+  gap: 5px;
 }
 
 .sobre__imagem img {
@@ -414,7 +423,19 @@ a {
 
 .contato__card .btn {
   margin-top: 12px;
+
 }
+
+.btn--contorno-claro {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+}
+
+.btn--contorno-claro:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
 
 /* ========================================
    FOOTER
@@ -513,7 +534,8 @@ a {
   /* SOBRE: imagem aparece depois do texto (já está empilhado,
      só ajusta ordem visual se quiser a foto primeiro) */
   .sobre__imagem {
-    order: -1; /* coloca a foto ACIMA do texto no mobile */
+    order: -1;
+    /* coloca a foto ACIMA do texto no mobile */
   }
 
   .sobre__inner {
@@ -533,7 +555,8 @@ a {
   }
 
   .btn--whatsapp {
-    width: 100%; /* botão ocupa largura total no mobile */
+    width: 100%;
+    /* botão ocupa largura total no mobile */
     justify-content: center;
   }
 
