@@ -384,9 +384,7 @@ a {
   text-align: center;
 }
 
-.contato__inner {
-  /* nada especial, usa container padrão */
-}
+
 
 .contato__cards {
   display: grid;

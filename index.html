@@ -1,164 +1,224 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agnes Kokedamas & Renascença Bonsai</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Fonte do Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Agnes Kokedamas & Renascença Bonsais</title>
-  <link rel="stylesheet" href="style.css" />
-  <!-- Fonte do Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-</head>
-
-<body>
-
-  <!-- ========== HEADER / NAVEGAÇÃO ========== -->
-  <header class="header">
-    <div class="container header__inner">
-      <div class="logo">
-        <span class="logo__icon"></span>
-        <span class="logo__text">Agnes Kokedamas & Renascença Bonsais</span>
+  <body>
+    <!-- ========== HEADER / NAVEGAÇÃO ========== -->
+    <header class="header">
+      <div class="container header__inner">
+        <div class="logo">
+          <span class="logo__icon"></span>
+          <span class="logo__text">Agnes Kokedamas & Renascença Bonsai</span>
+        </div>
+        <nav class="nav">
+          <a href="#catalogo" class="nav__link">Catálogo</a>
+          <a href="#sobre" class="nav__link">Sobre</a>
+          <a href="#contato" class="nav__link nav__link--destaque"
+            >Fale Conosco</a
+          >
+        </nav>
       </div>
-      <nav class="nav">
-        <a href="#catalogo" class="nav__link">Catálogo</a>
-        <a href="#sobre" class="nav__link">Sobre</a>
-        <a href="#contato" class="nav__link nav__link--destaque">Fale Conosco</a>
-      </nav>
-    </div>
-  </header>
+    </header>
 
-  <!-- ========== HERO (BANNER PRINCIPAL) ========== -->
-  <section class="hero">
-    <div class="container hero__inner">
-      <p class="hero__subtitulo">Feito à mão, com amor pela natureza</p>
-      <h1 class="hero__titulo">Kokedamas & Bonsais<br />artesanais para a sua casa</h1>
-      <p class="hero__descricao">Plantas vivas que decoram, purificam o ar e fazem presentes únicos e
-        inesquecíveis.</p>
-      <a href="#catalogo" class="btn btn--primario">Ver Catálogo</a>
-    </div>
-  </section>
-
-
-
-  <!-- ========== DIFERENCIAIS ========== -->
-  <section class="diferenciais">
-    <div class="container diferenciais__grid">
-
-      <div class="diferencial__item">
-        <span class="diferencial__icone"><i class="fa-solid fa-hand-sparkles"></i></span>
-        <h3>100% Artesanal</h3>
-        <p>Cada peça é moldada à mão com musgo natural e muito cuidado.</p>
+    <!-- ========== HERO (BANNER PRINCIPAL) ========== -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <p class="hero__subtitulo">Feito à mão, com amor pela natureza</p>
+        <h1 class="hero__titulo">
+          Kokedamas & Bonsais<br />artesanais para a sua casa
+        </h1>
+        <p class="hero__descricao">
+          Plantas vivas que decoram, purificam o ar e fazem presentes únicos e
+          inesquecíveis.
+        </p>
+        <a href="#catalogo" class="btn btn--primario">Ver Catálogo</a>
       </div>
+    </section>
 
-      <div class="diferencial__item">
-        <span class="diferencial__icone"><i class="fa-solid fa-gifts"></i></span>
-        <h3>Presente Único</h3>
-        <p>Ideal para datas especiais. Embalamos com carinho para presentear.</p>
+    <!-- ========== DIFERENCIAIS ========== -->
+    <section class="diferenciais">
+      <div class="container diferenciais__grid">
+        <div class="diferencial__item">
+          <span class="diferencial__icone"
+            ><i class="fa-solid fa-hand-sparkles"></i
+          ></span>
+          <h3>100% Artesanal</h3>
+          <p>Cada peça é moldada à mão com musgo natural e muito cuidado.</p>
+        </div>
+
+        <div class="diferencial__item">
+          <span class="diferencial__icone"
+            ><i class="fa-solid fa-gifts"></i
+          ></span>
+          <h3>Presente Único</h3>
+          <p>
+            Ideal para datas especiais. Embalamos com carinho para presentear.
+          </p>
+        </div>
+
+        <div class="diferencial__item">
+          <span class="diferencial__icone"
+            ><i class="fa-solid fa-leaf"></i
+          ></span>
+          <h3>Fácil de Cuidar</h3>
+          <p>
+            Enviamos todas as instruções de rega e cuidados com cada planta.
+          </p>
+        </div>
       </div>
+    </section>
 
-      <div class="diferencial__item">
-        <span class="diferencial__icone"><i class="fa-solid fa-leaf"></i></span>
-        <h3>Fácil de Cuidar</h3>
-        <p>Enviamos todas as instruções de rega e cuidados com cada planta.</p>
-      </div>
+    <!-- ========== CATÁLOGO ========== -->
+    <section class="catalogo" id="catalogo">
+      <div class="container">
+        <h2 class="secao__titulo">Nosso Catálogo</h2>
+        <p class="secao__subtitulo">
+          Confira as peças disponíveis. Para encomendar, fale pelo WhatsApp.
+        </p>
 
-    </div>
-  </section>
-
-
-
-  <!-- ========== CATÁLOGO ========== -->
-  <section class="catalogo" id="catalogo">
-    <div class="container">
-      <h2 class="secao__titulo">Nosso Catálogo</h2>
-      <p class="secao__subtitulo">Confira as peças disponíveis. Para encomendar, fale pelo WhatsApp.</p>
-
-      <div class="produtos__grid">
-
-        <!-- CARD 1 -->
-        <div class="produto__card">
-          <img src="https://i.postimg.cc/1RHB8Q2S/bonsai-buxus.jpg" alt="Bonsai" class="produto__foto" />
-          <div class="produto__info">
-            <span class="produto__categoria">Bonsai</span>
-            <h3 class="produto__nome">Bonsai de Buxus</h3>
-            <p class="produto__descricao">Bonsai com 6 anos de idade. Perfeito para ornar ambientes.</p>
-            <div class="produto__rodape">
-              <span class="produto__preco">R$ 175,00</span>
-              <a href="https://wa.me/5551992756955?text=Olá!%20Tenho%20interesse%20na%20Kokedama%20de%20Ficus."
-                class="btn btn--whatsapp" target="_blank">
-                <i class="fa-brands fa-whatsapp"></i>Tenho interesse </a>
+        <div class="produtos__grid">
+          <!-- CARD 1 -->
+          <div class="produto__card">
+            <img
+              src="https://i.postimg.cc/1RHB8Q2S/bonsai-buxus.jpg"
+              alt="Bonsai"
+              class="produto__foto"
+            />
+            <div class="produto__info">
+              <span class="produto__categoria">Bonsai</span>
+              <h3 class="produto__nome">Bonsai de Buxus</h3>
+              <p class="produto__descricao">
+                Bonsai com 6 anos de idade. Perfeito para ornar ambientes.
+              </p>
+              <div class="produto__rodape">
+                <span class="produto__preco">R$ 175,00</span>
+                <a
+                  href="https://wa.me/5551992756955?text=Olá!%20Tenho%20interesse%20na%20Kokedama%20de%20Ficus."
+                  class="btn btn--whatsapp"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-whatsapp"></i>Tenho interesse
+                </a>
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- CARD 2 -->
-        <div class="produto__card">
-          <img src="https://i.postimg.cc/k4trn5fJ/bonsai-espada.jpg" alt="Kokedama" class="produto__foto" />
-          <div class="produto__info">
-            <span class="produto__categoria">Kokedama</span>
-            <h3 class="produto__nome">Kokedama de espada</h3>
-            <p class="produto__descricao">Planta resistente e elegante, associada à proteção e boa energia no lar.</p>
-            <div class="produto__rodape">
-              <span class="produto__preco">R$ 65,00</span>
-              <a href="https://wa.me/5551992756955?text=Olá!%20Tenho%20interesse%20no%20Bonsai%20Carmona."
-                class="btn btn--whatsapp" target="_blank">
-                <i class="fa-brands fa-whatsapp"></i>Tenho interesse </a>
+          <!-- CARD 2 -->
+          <div class="produto__card">
+            <img
+              src="https://i.postimg.cc/k4trn5fJ/bonsai-espada.jpg"
+              alt="Kokedama"
+              class="produto__foto"
+            />
+            <div class="produto__info">
+              <span class="produto__categoria">Kokedama</span>
+              <h3 class="produto__nome">Kokedama de espada</h3>
+              <p class="produto__descricao">
+                Planta resistente e elegante, associada à proteção e boa energia
+                no lar.
+              </p>
+              <div class="produto__rodape">
+                <span class="produto__preco">R$ 65,00</span>
+                <a
+                  href="https://wa.me/5551992756955?text=Olá!%20Tenho%20interesse%20no%20Bonsai%20Carmona."
+                  class="btn btn--whatsapp"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-whatsapp"></i>Tenho interesse
+                </a>
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- CARD 3 -->
-        <div class="produto__card">
-          <img src="https://i.postimg.cc/WbN983g9/kokedama-chamedorea.jpg" alt="Kokedama" class="produto__foto" />
-          <div class="produto__info">
-            <span class="produto__categoria">Kokedama</span>
-            <h3 class="produto__nome">Kokedama de Chamedorea</h3>
-            <p class="produto__descricao">Exuberante em esfera de musgo.</p>
-            <div class="produto__rodape">
-              <span class="produto__preco">R$ 95,00</span>
-              <a href="https://wa.me/5551992756955?text=Olá!%20Tenho%20interesse%20na%20Kokedama%20de%20Samambaia."
-                class="btn btn--whatsapp" target="_blank">
-                <i class="fa-brands fa-whatsapp"></i>Tenho interesse </a>
+          <!-- CARD 3 -->
+          <div class="produto__card">
+            <img
+              src="https://i.postimg.cc/WbN983g9/kokedama-chamedorea.jpg"
+              alt="Kokedama"
+              class="produto__foto"
+            />
+            <div class="produto__info">
+              <span class="produto__categoria">Kokedama</span>
+              <h3 class="produto__nome">Kokedama de Chamedorea</h3>
+              <p class="produto__descricao">Exuberante em esfera de musgo.</p>
+              <div class="produto__rodape">
+                <span class="produto__preco">R$ 95,00</span>
+                <a
+                  href="https://wa.me/5551992756955?text=Olá!%20Tenho%20interesse%20na%20Kokedama%20de%20Samambaia."
+                  class="btn btn--whatsapp"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-whatsapp"></i>Tenho interesse
+                </a>
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- CARD 4 -->
-        <div class="produto__card">
-          <img src="https://i.postimg.cc/SsVZbbpK/arranjo1.jpg" alt="Kit Presente" class="produto__foto" />
-          <div class="produto__info">
-            <span class="produto__categoria">Arranjos</span>
-            <h3 class="produto__nome">Arranjo de Flores </h3>
-            <p class="produto__descricao">Arranjo produzido com flores variadas.</p>
-            <div class="produto__rodape">
-              <span class="produto__preco">R$ 145,00</span>
-              <a href="https://wa.me/5551992756955?text=Olá!%20Tenho%20interesse%20no%20Kit%20Presente%20Natureza."
-                class="btn btn--whatsapp" target="_blank">
-                <i class="fa-brands fa-whatsapp"></i>Tenho interesse </a>
+          <!-- CARD 4 -->
+          <div class="produto__card">
+            <img
+              src="https://i.postimg.cc/SsVZbbpK/arranjo1.jpg"
+              alt="Kit Presente"
+              class="produto__foto"
+            />
+            <div class="produto__info">
+              <span class="produto__categoria">Arranjos</span>
+              <h3 class="produto__nome">Arranjo de Flores</h3>
+              <p class="produto__descricao">
+                Arranjo produzido com flores variadas.
+              </p>
+              <div class="produto__rodape">
+                <span class="produto__preco">R$ 145,00</span>
+                <a
+                  href="https://wa.me/5551992756955?text=Olá!%20Tenho%20interesse%20no%20Kit%20Presente%20Natureza."
+                  class="btn btn--whatsapp"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-whatsapp"></i>Tenho interesse
+                </a>
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- CARD 5  -->
-        <div class="produto__card">
-          <img src="https://i.postimg.cc/Fsp6XcNV/bonsai-ficus.jpg" alt="Bonsai Caliandra" class="produto__foto" />
-          <div class="produto__info">
-            <span class="produto__categoria">Bonsai</span>
-            <h3 class="produto__nome">Bonsai de Ficus</h3>
-            <p class="produto__descricao">Bonsai com 8 anos de idade.</p>
-            <div class="produto__rodape">
-              <span class="produto__preco">R$ 230,00</span>
-              <a href="https://wa.me/5551992756955?text=Olá!%20Tenho%20interesse%20no%20Bonsai%20Caliandra."
-                class="btn btn--whatsapp" target="_blank">
-                <i class="fa-brands fa-whatsapp"></i>Tenho interesse </a>
+          <!-- CARD 5  -->
+          <div class="produto__card">
+            <img
+              src="https://i.postimg.cc/Fsp6XcNV/bonsai-ficus.jpg"
+              alt="Bonsai Caliandra"
+              class="produto__foto"
+            />
+            <div class="produto__info">
+              <span class="produto__categoria">Bonsai</span>
+              <h3 class="produto__nome">Bonsai de Ficus</h3>
+              <p class="produto__descricao">Bonsai com 8 anos de idade.</p>
+              <div class="produto__rodape">
+                <span class="produto__preco">R$ 230,00</span>
+                <a
+                  href="https://wa.me/5551992756955?text=Olá!%20Tenho%20interesse%20no%20Bonsai%20Caliandra."
+                  class="btn btn--whatsapp"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-whatsapp"></i>Tenho interesse
+                </a>
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- CARD 6 
+          <!-- CARD 6 
         <div class="produto__card">
           <img src="https://i.postimg.cc/mkMsf9Gd/imagem-2026-03-03-104429805.png" alt="Kokedama Espada-de-são-jorge" class="produto__foto" />
           <div class="produto__info">
@@ -175,75 +235,105 @@
             </div>
           </div>
         </div>-->
-
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ========== SOBRE ========== -->
-  <section class="sobre" id="sobre">
-    <div class="container sobre__inner">
-      <div class="sobre__texto">
-        <h2 class="secao__titulo">Sobre a Agnes Kokedamas</h2>
-        <p>Somos um ateliê artesanal localizado em Novo Hamburgo, RS. Cada kokedama e bonsai é criado com
-          espécies selecionadas, musgo natural e muito amor pela natureza.</p>
-        <p>Acreditamos que a energia vem da natureza e que uma planta viva transforma qualquer espaço.
-          Atendemos presencialmente e fazemos encomendas para presentes personalizados.</p>
-        <a href="https://www.instagram.com/agneskokedamas/" class="btn btn--secundario"
-          target="_blank"><i class="fa-brands fa-instagram"></i> Ver
-          no Instagram</a>
-      </div>
-      <div class="sobre__imagem">
-        <img src="https://i.postimg.cc/k4J65n5c/imagem-2026-03-03-105043907.png" alt="Ateliê Agnes Kokedamas" />
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== CONTATO ========== -->
-  <section class="contato" id="contato">
-    <div class="container contato__inner">
-      <h2 class="secao__titulo secao__titulo--claro">Fale Conosco</h2>
-      <p class="secao__subtitulo secao__subtitulo--claro">Quer encomendar, tirar dúvidas ou fazer um presente
-        especial? Chama no WhatsApp!</p>
-
-      <div class="contato__cards">
-
-        <div class="contato__card">
-          <span class="contato__icone"><i class="fa-solid fa-location-dot"></i></span>
-          <h4>Localização</h4>
-          <p>Atendimento presencial</p>
-          <a href="https://maps.app.goo.gl/T7uppauiaYsMbEaU9" class="btn btn--contorno-claro" target="_blank">
-            Ver no Google Maps
-          </a>
         </div>
-
-        <div class="contato__card">
-          <span class="contato__icone"><i class="fa-brands fa-whatsapp"></i></span>
-          <h4>WhatsApp</h4>
-          <p>Entre em contato de forma prática</p>
-          <a href="https://wa.me/5551992756955" class="btn btn--whatsapp" target="_blank">Abrir conversa</a>
-        </div>
-
-        <div class="contato__card">
-          <span class="contato__icone"><i class="fa-brands fa-instagram"></i></span>
-          <h4>Instagram</h4>
-          <p>Siga @agneskokedamas</p>
-          <a href="https://www.instagram.com/agneskokedamas/" class="btn btn--contorno-claro" target="_blank">Ver perfil</a>
-
-        </div>
-
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ========== FOOTER ========== -->
-  <footer class="footer">
-    <div class="container">
-      <p>© 2026 Agnes Kokedamas & Renascença Bonsais · Novo Hamburgo, RS · Feito com à mão, com amor pela natureza</p>
-    </div>
-  </footer>
+    <!-- ========== SOBRE ========== -->
+    <section class="sobre" id="sobre">
+      <div class="container sobre__inner">
+        <div class="sobre__texto">
+          <h2 class="secao__titulo">Sobre a Agnes Kokedamas</h2>
+          <p>
+            Somos um ateliê artesanal localizado em Novo Hamburgo, RS. Cada
+            kokedama e bonsai é criado com espécies selecionadas, musgo natural
+            e muito amor pela natureza.
+          </p>
+          <p>
+            Acreditamos que a energia vem da natureza e que uma planta viva
+            transforma qualquer espaço. Atendemos presencialmente e fazemos
+            encomendas para presentes personalizados.
+          </p>
+          <a
+            href="https://www.instagram.com/agneskokedamas/"
+            class="btn btn--secundario"
+            target="_blank"
+            ><i class="fa-brands fa-instagram"></i> Ver no Instagram</a
+          >
+        </div>
+        <div class="sobre__imagem">
+          <img
+            src="https://i.postimg.cc/k4J65n5c/imagem-2026-03-03-105043907.png"
+            alt="Ateliê Agnes Kokedamas"
+          />
+        </div>
+      </div>
+    </section>
 
-</body>
+    <!-- ========== CONTATO ========== -->
+    <section class="contato" id="contato">
+      <div class="container contato__inner">
+        <h2 class="secao__titulo secao__titulo--claro">Fale Conosco</h2>
+        <p class="secao__subtitulo secao__subtitulo--claro">
+          Quer encomendar, tirar dúvidas ou fazer um presente especial? Chama no
+          WhatsApp!
+        </p>
 
+        <div class="contato__cards">
+          <div class="contato__card">
+            <span class="contato__icone"
+              ><i class="fa-solid fa-location-dot"></i
+            ></span>
+            <h4>Localização</h4>
+            <p>Atendimento presencial</p>
+            <a
+              href="https://maps.app.goo.gl/T7uppauiaYsMbEaU9"
+              class="btn btn--contorno-claro"
+              target="_blank"
+            >
+              Ver no Google Maps
+            </a>
+          </div>
+
+          <div class="contato__card">
+            <span class="contato__icone"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></span>
+            <h4>WhatsApp</h4>
+            <p>Entre em contato de forma prática</p>
+            <a
+              href="https://wa.me/5551992756955"
+              class="btn btn--whatsapp"
+              target="_blank"
+              >Abrir conversa</a
+            >
+          </div>
+
+          <div class="contato__card">
+            <span class="contato__icone"
+              ><i class="fa-brands fa-instagram"></i
+            ></span>
+            <h4>Instagram</h4>
+            <p>Siga @agneskokedamas</p>
+            <a
+              href="https://www.instagram.com/agneskokedamas/"
+              class="btn btn--contorno-claro"
+              target="_blank"
+              >Ver perfil</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+      <div class="container">
+        <p>
+          © 2026 Agnes Kokedamas & Renascença Bonsais · Novo Hamburgo, RS ·
+          Feito com à mão, com amor pela natureza
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
