@@ -26,21 +26,6 @@ Para criar o layout limpo e performático, foram aplicadas boas práticas de des
 - **Variáveis CSS:** Centralização de cores da paleta botânica e fontes, facilitando futuras manutenções visuais no tema.
 - **Mensagem via URL Parameters:** Integração direta com a API de link do WhatsApp para automatizar o texto do pedido do cliente.
 
----
-
-## 🚀 Como Clonar e Executar
-
-Caso queira analisar o código estruturado de forma estática:
-
-1. Clone o projeto:
-   ```bash
-   git clone https://github.com
-   ```
-2. Entre no diretório do projeto:
-   ```bash
-   cd agneskokedamasebonsais
-   ```
-3. Abra o arquivo `index.html` em seu navegador de preferência.
 
 ---
 
