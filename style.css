@@ -1,5 +1,5 @@
 /* ========================================
-   PALETA DE CORES - AGNES KOKEDAMAS
+   PALETA DAS  CORES 
 ======================================== */
 :root {
   --cor-rosa: #C97B84;
@@ -31,7 +31,6 @@
 
 html {
   scroll-behavior: smooth;
-  /* faz o scroll suave ao clicar nos links do menu */
 }
 
 body {
@@ -41,7 +40,6 @@ body {
   line-height: 1.7;
 }
 
-/* Container centralizado com largura máxima */
 .container {
   max-width: 1100px;
   margin: 0 auto;
@@ -81,7 +79,7 @@ a {
 }
 
 /* ========================================
-           BOTÕES
+        BOTÕES
 ======================================== */
 .btn {
   display: inline-flex;
@@ -182,7 +180,7 @@ a {
 }
 
 /* ========================================
-   HERO
+   bigHERO
 ======================================== */
 .hero {
   padding: 100px 0;
@@ -231,7 +229,7 @@ a {
 }
 
 /* ========================================
-   DIFERENCIAIS
+   seção DIFERENCIAIS
 ======================================== */
 .diferenciais {
   padding: 64px 0;
@@ -270,7 +268,7 @@ a {
 }
 
 /* ========================================
-   CATÁLOGO
+   seção CATÁLOGO
 ======================================== */
 .catalogo {
   padding: 80px 0;
@@ -299,7 +297,6 @@ a {
 .produto__foto {
   height: 220px;
   object-fit: cover;
-  /* corta a imagem sem distorcer */
 }
 
 .produto__info {
@@ -346,7 +343,7 @@ a {
 }
 
 /* ========================================
-   SOBRE
+   seção SOBRE
 ======================================== */
 .sobre {
   padding: 80px 0;
@@ -376,7 +373,7 @@ a {
 }
 
 /* ========================================
-   CONTATO
+   aba de CONTATO
 ======================================== */
 .contato {
   padding: 80px 0;
@@ -448,28 +445,33 @@ a {
 
 
 
+
+
+
 /* ========================================
-   TABLET — telas até 900px
+aqui COMEÇA MOBILE 
+
+   TABLET — para telas para até 900px
 ======================================== */
 @media (max-width: 900px) {
 
-  /* Catálogo: 3 colunas → 2 colunas */
+  /* Catálogo:  */
   .produtos__grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  /* Diferenciais: 3 → 2 colunas */
+  /* Diferenciais:  */
   .diferenciais__grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  /* Sobre: lado a lado → empilhado */
+  /* Sobre:*/
   .sobre__inner {
     grid-template-columns: 1fr;
     gap: 32px;
   }
 
-  /* Contato: 3 → 2 colunas */
+  /* Contato: */
   .contato__cards {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -482,21 +484,18 @@ a {
 
 
 /* ========================================
-   MOBILE — telas até 600px
+   MOBILE — para  telas de  até 600px
 ======================================== */
 @media (max-width: 600px) {
 
-  /* HEADER: esconde nav, mostra só logo */
   .nav {
     display: none;
-    /* dica futura: com JS você faz um menu hamburguer aqui */
   }
 
   .header {
     padding: 12px 0;
   }
 
-  /* HERO: ajustes de tamanho e espaçamento */
   .hero {
     padding: 64px 0;
   }
@@ -529,23 +528,19 @@ a {
     font-size: 1.6rem;
   }
 
-  /* SOBRE: imagem aparece depois do texto (já está empilhado,
-     só ajusta ordem visual se quiser a foto primeiro) */
+
   .sobre__imagem {
     order: -1;
-    /* coloca a foto ACIMA do texto no mobile */
   }
 
   .sobre__inner {
     gap: 24px;
   }
 
-  /* CONTATO: 1 coluna */
   .contato__cards {
     grid-template-columns: 1fr;
   }
 
-  /* Botão do produto: não deixa quebrar linha */
   .produto__rodape {
     flex-direction: column;
     align-items: flex-start;
@@ -554,7 +549,7 @@ a {
 
   .btn--whatsapp {
     width: 100%;
-    /* botão ocupa largura total no mobile */
+    /* botão vai ocupa largura total no mobile */
     justify-content: center;
   }
 
